@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.timetable {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+}
+
+.row>div {
+    height: 60px;
+    display: table-cell;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.header>div {
+    font-weight: bold;
+    background-color: #eee;
+}

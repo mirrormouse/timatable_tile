@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間割アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="timetable">
+        <div class="row header">
+            <div>時限</div>
+            <div>月</div>
+            <div>火</div>
+            <div>水</div>
+            <div>木</div>
+            <div>金</div>
+        </div>
+        <!-- 各行を以下のように追加してください -->
+        <div class="row">
+            <div>1</div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+        </div>
+        <div class="row">
+            <div>2</div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+        </div>
+        <div class="row">
+            <div>3</div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+        </div>
+        <!-- 以下同様に2~5限まで追加 -->
+        <!-- ... -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
