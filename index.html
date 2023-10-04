@@ -43,9 +43,47 @@
             <div onclick="editCell(this)"></div>
             <div onclick="editCell(this)"></div>
         </div>
+        <div class="row">
+            <div>4</div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+        </div>
+        <div class="row">
+            <div>5</div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+            <div onclick="editCell(this)"></div>
+        </div>
+
         <!-- 以下同様に2~5限まで追加 -->
         <!-- ... -->
     </div>
+
+    <!-- これをtimetableの下に追加 -->
+    <div class="edit-area">
+        <label>授業名: </label>
+        <input type="text" id="subjectInput">
+        <label>色: </label>
+        <select id="colorSelect">
+            <option value="#FFE0E0" style="background-color: #FFD0D0;">赤</option>
+            <option value="#F0E0FF" style="background-color: #FFD0FF;">紫</option>
+            <option value="#E0E0FF" style="background-color: #D0D0FF;">青</option>
+            <option value="#E0FFFF" style="background-color: #D0FFFF;">水色</option>
+            <option value="#E0FFE0" style="background-color: #D0FFD0;">緑</option>
+            <option value="#E0FFF0" style="background-color: #E7FFE7;">黄緑</option>
+            <option value="#FFFFE0" style="background-color: #FFFFD0;">黄色</option>
+            <option value="#FFF0E0" style="background-color: #FFE7E7;">オレンジ</option>
+            <option value="#FFFFFF" style="background-color: #FFFFFF;">白</option>
+
+        </select>
+        <button onclick="submitEdit()">変更を保存</button>
+    </div>
+
 
     <script src="scripts.js"></script>
 </body>

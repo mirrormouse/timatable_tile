@@ -24,3 +24,71 @@ body {
     font-weight: bold;
     background-color: #eee;
 }
+
+/* このスタイルをstyles.cssに追加 */
+.edit-area {
+    margin-top: 20px;
+    display: none;
+    /* 最初は非表示にしておく */
+}
+
+/* 既存のCSS */
+
+/* セルのサイズが一定になるように */
+.row>div {
+    height: 60px;
+    width: 100px;
+    /* 一定の幅を設定 */
+    white-space: normal;
+    /* 文字列がセルに収まらない場合に改行する */
+    word-wrap: break-word;
+    /* 単語がセルの幅を超える場合に改行する */
+    overflow: hidden;
+    /* セルのサイズを超える内容は非表示 */
+    /* 既存のスタイル */
+}
+
+/* 編集エリアのデザインを洗練させる */
+.edit-area {
+    margin-top: 20px;
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    /* サイズを調整する場合はこの値を変更 */
+}
+
+.edit-area label,
+.edit-area input,
+.edit-area select,
+.edit-area button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.edit-area button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-area button:hover {
+    background-color: #0056b3;
+}
+
+/* 追加するCSS */
+#colorSelect option {
+    padding: 5px 10px;
+    color: #333;
+    /* デフォルトの文字色 */
+}
+
+#colorSelect option:checked {
+    color: #fff;
+    /* 選択されたオプションの文字色 */
+}
